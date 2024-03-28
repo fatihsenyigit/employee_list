@@ -1,6 +1,3 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
-
 # Employee List
 
 ## Description
@@ -82,4 +79,3 @@ Build a Employee List App using ReactJS.
 
   <a href="https://employee-list-app-omega.vercel.app/" target="_blank">React Employee List</a>
 
-**<p align="center">&#9786; Happy Coding &#9997;</p>**
