@@ -123,4 +123,8 @@ main {
   border-radius: $radius;
   outline: 1px solid rgba(242, 138, 178, 0.8);
   cursor: pointer;
+  transition: all .8s;
+  &:hover {
+    background-color: $clr-blue2;
+  }
 }
