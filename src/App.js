@@ -23,7 +23,7 @@ function App() {
     <main>
       <section className="container">
         <h3>Employee List</h3>
-        <h5>(Employees 1 to 5)</h5>
+        <h5>{`(Employees ${startIndex+1} to ${startIndex+5})`}</h5>
         {currentPagePlayers.map((person) => (
           <List key={person.id} {...person} />
         ))}
