@@ -6,15 +6,15 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const prevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
+    const totalPages = Math.ceil(data.length / 5);
+    const newPage = currentPage === 1 ? totalPages : currentPage -1;
+    setCurrentPage(newPage);
   };
 
   const nextPage = () => {
-    if (currentPage < Math.ceil(data.length / 5)) {
-      setCurrentPage(currentPage + 1);
-    }
+    const totalPages = Math.ceil(data.length/5)
+    const newPage = currentPage === totalPages ? 1 : currentPage + 1;
+    setCurrentPage(newPage)
   };
 
   const startIndex = (currentPage-1) * 5;
@@ -29,11 +29,10 @@ function App() {
         ))}
 
         <div className="btns">
-          <button disabled={currentPage === 1} onClick={prevPage}>
+          <button onClick={prevPage}>
             Prev
           </button>
           <button
-            disabled={currentPage === Math.ceil(data.length / 5)}
             onClick={nextPage}
           >
             Next
